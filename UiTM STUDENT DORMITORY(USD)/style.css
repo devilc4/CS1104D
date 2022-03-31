@@ -110,7 +110,7 @@ footer {
   background: rgb(3, 43, 175);
   color: #fff;
   text-align: center;
-  padding: 13px 0px 13px 0px;
+  padding: 2px 0px 2px 0px;
 }
 
 .content {
@@ -662,14 +662,14 @@ nav .logo {
 
 .doneTitle {
   font-size: 5vw;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.644);
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .doneSub {
   font-size: 2vw;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.61);
   padding: 10px;
   margin-top: 15px;
 }

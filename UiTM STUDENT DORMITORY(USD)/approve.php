@@ -42,19 +42,19 @@
 		    $mail->Port = 587;                                    // TCP port to connect to
 
 		    //Recipients
-		    $mail->setFrom($mail_id, 'VH Registration');
+		    $mail->setFrom($mail_id, 'UiTM STUDENT DORMITORY');
 		    $mail->addAddress($director_email);     // Add a recipient
 
 
 		    //Content
 		    $mail->isHTML(true);                                  // Set email format to HTML
-		    $mail->Subject = 'New Registration for Visitor Hostel';
+		    $mail->Subject = 'New Registration for Student Dormitory';
 		    $mail->Body    = $email;
 		    $mail->AltBody = $altemail;
 
 		    $mail->send();
 		    $msg = '<h1><span class="doneTitle">You have approved the request.</span></h1>
-			<h3><span class="doneSub">An email will be sent to you when Director approves this request.</span></h3>';
+			<h3><span class="doneSub">An email will be sent to you when we approves this request.</span></h3>';
 		} catch (Exception $e) {
 			$msg = '<h1><span class="doneTitle">Message could not be sent. Mailer Error: </span></h1>'.$mail->ErrorInfo; 
 		}
@@ -65,7 +65,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ABV-IIITM | VH Registration</title>
+	<title>UiTM | Student's Dormitory</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link rel="icon" type="image/png" href="logo.png">
@@ -89,13 +89,13 @@
 			<div>
 				<img class="logo" src="logo.png">
 			<h1 class="companyName">
-				ABV-Indian Institute of Information Technology & Management, Gwalior
+				UiTM-Universiti Teknologi MARA
 			</h1>
 			</div>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">HOME</a></li>
 				<li><a href="faq.html">FAQ</a></li>
-				<li><a class="room" href="form.html"><b>Book A Room</b></a></li>
+				<li><a class="room" href="form.html"><b>DORM REGISTRATION</b></a></li>
 				
 			</ul>
 		</nav>
@@ -106,11 +106,9 @@
 		</section>
 
 		<footer>
-			Copyright &copy; ABV-Indian Institute of Information Technology & Management, Gwalior
+			Copyright &copy; 2022 Universiti Teknologi MARA - HTML BY MUHAMMAD SYAFIQ CS1104D
 		</footer>
 	</div>
-
-
 
 </body>
 </html>
