@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UiTM | Dorm Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rubik" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" >
+
+    $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+        });
+
+    $(window).on('scroll', function() {
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black');
+    }
+  })
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <div>
+        <img class="logo" src="logo.png">
+      <h1 class="companyName">
+        UiTM-Universiti Teknologi Mara
+      </h1>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a class="room-active" href="#"><b>DORM REGISTRATION</b></a></li>
+        
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <form action="submit.php" method="post">
+        <h1>Student's Dormitory Registration Form</h1>
+        <h2>Student's Information</h2>
+        <div class="form-group">
+          <select name="category">
+            <option value="AC">AC</option>
+            <option value="NAC">Non-AC</option>
+          </select>
+          <label for="select" class="control-label">Choose Room's Catergory</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="student-name" required="required"/>
+          <label for="input" class="control-label">Name</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="rollno" required="required"/>
+          <label for="input" class="control-label">Roll Number</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="student-mobile" required="required"/>
+          <label for="input" class="control-label">Phone Number</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="student-email" required="required"/>
+          <label for="input" class="control-label">College's E-Mail</label><i class="bar"></i>
+        </div>
+        <!-- <div class="form-group">
+          <textarea required="required"></textarea>
+          <label for="textarea" class="control-label">Hostel's Address</label><i class="bar"></i>
+        </div> -->
+        <h2>Visitor's Information</h2>
+        <div class="form-group">
+          <input type="text" name="first-name" required="required"/>
+          <label for="input" class="control-label">First Name</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="last-name" required="required"/>
+          <label for="input" class="control-label">Last Name</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="relation" required="required"/>
+          <label for="input" class="control-label">Relation With The Student</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="mobile" required="required"/>
+          <label for="input" class="control-label">Phone Number</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="email" required="required"/>
+          <label for="input" class="control-label">E-Mail Address</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <textarea name="address" required="required"></textarea>
+          <label for="textarea" class="control-label">Residential Address</label><i class="bar"></i>
+        </div>
+        <h2>Additional Information</h2>
+        <div class="form-group">
+          <input type="text" name="doa" required="required"/>
+          <label for="input" class="control-label">Date Of Arrival</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="duration" required="required"/>
+          <label for="input" class="control-label">Duration Of Stay (in Days)</label><i class="bar"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" name="number" required="required"/>
+          <label for="input" class="control-label">No. of Accompanying Members</label><i class="bar"></i>
+        </div>
+  
+        <div class="button-container">
+          <button type="submit" class="button"><span>Submit</span></button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      Copyright &copy; ABV-Indian Institute of Information Technology & Management, Gwalior
+    </footer>
+  </div>
+
+  <script src="script.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

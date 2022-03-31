@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>UiTM | Student's Dormitory</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Rubik" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" >
+
+		$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+        });
+
+		$(window).on('scroll', function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+		}
+	})
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<nav>
+			<div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+			<div>
+				<a href='https://uitm.edu.my/index.php/en/'>
+					<img class="logo" src="logo.png">
+				</a>
+			<h1 class="companyName">
+				UiTM-Universiti Teknologi MARA	
+			</h1>
+			</div>
+			<ul>
+				<li><a class="active" href="#">HOME</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a class="room" href="form.html"><b>DORM REGISTRATION</b></a></li>
+				
+			</ul>
+		</nav>
+		<section class="doneSec sec1">
+			<h1><span class="doneTitle">UiTM DORMITORY REGISTRATION PORTAL</span></h1>
+			<h3><span class="doneSub">PORTAL PENDAFTARAN ASRAMA UiTM</span></h3>
+		</section>
+		<footer>
+			Copyright &copy; 2022 Universiti Teknologi MARA - HTML BY MUHAMMAD SYAFIQ CS1104D
+		</footer>
+	</div>
+</body>
+</html>

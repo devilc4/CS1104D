@@ -1,0 +1,9 @@
+<?php
+
+$dbusername = "<mysql-user-name>";		 // Mysql username 
+$dbpassword = "<mysql-password>";		 // Mysql Password
+
+$mail_id = '<your-gmail-username>@gmail.com';
+$mail_password = '<gmail-password>';
+
+?>
