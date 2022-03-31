@@ -24,12 +24,13 @@ img {
 }
 
 nav.black {
-  background: rgba(0,0,0,0.75);
+  background: rgb(3, 43, 175);
   height:100px;
   padding: 10px 100px;
 }
 
 nav .companyName {
+  color:#fff;
   padding: 10px 20px;
   height: 10px;
   transition: .3s;
@@ -68,7 +69,7 @@ nav ul li {
 
 nav ul li a {
   line-height: 80px;
-  color: #151515;
+  color: #ffffff;
   padding: 12px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -84,13 +85,17 @@ nav ul li a:focus {
 }
 
 nav ul li a.room {
-  background:#E2472F;
-  color: #fff;
+  background:#0039f5;
+  color:#ffffff;
+  border-style: solid;
   border-radius: 6px;
+  border-width: 2px;
 }
 
 nav ul li a.active {
-  color: #E2472F;
+  color: #ffffff;
+  border-radius: 6px;
+  border-width: 2px
 }
 
 section.sec1 {
@@ -102,10 +107,10 @@ section.sec1 {
 }
 
 footer {
-  background: #000;
+  background: rgb(3, 43, 175);
   color: #fff;
   text-align: center;
-  padding: 15px 0px 15px 0px;
+  padding: 13px 0px 13px 0px;
 }
 
 .content {
@@ -132,8 +137,8 @@ footer {
 }
 
 .room-active {
-  background:#ff;
-  color:#E2472F;
+  background:#0039f5;
+  color:#ffffff;
   border-style: solid;
   border-radius: 6px;
   border-width: 2px;
@@ -147,7 +152,7 @@ footer {
       box-sizing: border-box;
       padding: 15px 24px;
       cursor: pointer;
-      color: #E2472F;
+      color: #ffffff;
       display: none;
 }
 
